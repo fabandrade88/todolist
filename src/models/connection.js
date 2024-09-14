@@ -1,13 +1,11 @@
 import 'dotenv/config';
 import mysql from 'mysql2/promise';
 
-console.log(process.env.MYSQL_HOST)
-
 const connection = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'todolist',
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DB,
 });
 
 
