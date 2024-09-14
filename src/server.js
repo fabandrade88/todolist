@@ -1,5 +1,5 @@
 import app from './app.js'
-import 'dotenv/config';; //puxar passwords do .env
+import 'dotenv/config'; //puxar passwords do .env
 
 const PORT = process.env.PORT || 3337;
 console.log(process.env.PORT);
