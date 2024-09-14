@@ -1,11 +1,12 @@
-const express = require('express');
-const tasksControllers = require('./controllers/tasksController')
+import express from 'express';
+import getAll from './controllers/tasksController.js'
 
 
 const router = express.Router();
 
-router.get('/tasks', tasksControllers.getAll);
+router.get('/tasks', getAll);
 
 
 
-module.exports = router;
+
+export default router

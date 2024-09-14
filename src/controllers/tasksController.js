@@ -1,8 +1,11 @@
-const getAll = (req, res) => {
-    return res.status(200).json({message: 'controller funcionando'})
+import getAlll from '../models/taskModel.js'
+
+const getAll = async (req, res) => {
+
+    const tasks = await getAlll()
+
+    return res.status(200).json(tasks)
 
 }
 
-module.exports = {
-    getAll
-}
+export default getAll

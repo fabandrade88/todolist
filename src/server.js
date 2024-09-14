@@ -1,5 +1,5 @@
-const app = require('./app');
-require('dotenv').config('./env'); //puxar passwords do .env
+import app from './app.js'
+import 'dotenv/config';; //puxar passwords do .env
 
 const PORT = process.env.PORT || 3335;
 console.log(process.env.PORT);
