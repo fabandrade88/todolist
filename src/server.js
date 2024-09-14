@@ -1,7 +1,7 @@
 import app from './app.js'
 import 'dotenv/config';; //puxar passwords do .env
 
-const PORT = process.env.PORT || 3335;
+const PORT = process.env.PORT || 3336;
 console.log(process.env.PORT);
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`)); //rotas
